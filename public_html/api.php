@@ -1,7 +1,7 @@
 <?php
 
-require_once dirname(__FILE__) . '/config.php';
-require_once 'vendor/autoload.php';
+require_once dirname(__FILE__) . '/../config.php';
+require_once '../vendor/autoload.php';
 
 // Get the image from the API call
 $image = $_GET['image'] ?: 'test';

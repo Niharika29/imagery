@@ -6,7 +6,7 @@
 	"autoload": {
 		"classmap": [
 			"Imagery.php",
-			"ImageryApi.php",
+			"public_html/ImageryApi.php",
 			"AnalyseImage.php",
 			"CategorySuggester.php"
 		]

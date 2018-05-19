@@ -1,2 +1,4 @@
 config.php
 php_errors.log
+vendor/
+.DS_Store
