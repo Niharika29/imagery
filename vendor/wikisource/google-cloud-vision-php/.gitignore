@@ -1,0 +1,8 @@
+/tests/config.php
+/examples/config.php
+/.phpintel
+/nbproject
+/.idea
+/vendor
+/composer.lock
+

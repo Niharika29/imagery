@@ -1,0 +1,14 @@
+{
+	"require": {
+		"google/cloud-vision": "^0.11.4",
+		"wikisource/google-cloud-vision-php": "^1.2"
+	},
+	"autoload": {
+		"classmap": [
+			"Imagery.php",
+			"ImageryApi.php",
+			"AnalyseImage.php",
+			"CategorySuggester.php"
+		]
+	}
+}
