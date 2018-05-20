@@ -95,7 +95,7 @@ class CategorySuggester {
 		if ( count( $actualCategories ) > 0 ) {
 			return $actualCategories;
 		}
-		return false;
+		return null;
 	}
 
 }

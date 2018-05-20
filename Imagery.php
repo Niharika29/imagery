@@ -3,13 +3,6 @@
 require_once 'vendor/autoload.php';
 use Wikisource\GoogleCloudVisionPHP\GoogleCloudVision;
 
-// $child->main( 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Hans_Sachs._Monument.jpg' );
-// $child->main( 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Volleyball_match_between_national_teams_of_Iran_and_Italy_at_the_Olympic_Games_in_2016_-_15.jpg' );
-// $child->main( 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/The_Shard_from_the_Sky_Garden_2015.jpg/298px-The_Shard_from_the_Sky_Garden_2015.jpg' );
-// $child->main( 'https://upload.wikimedia.org/wikipedia/commons/3/37/Abdul_Wahab_in_Lake_Saif_ul_Malook.jpg' );
-// $child->main( 'https://upload.wikimedia.org/wikipedia/commons/c/c0/BDavis_%28WMF%29_Selfie_%28red_shirt_edition%29.jpg' );
-// $child->main( 'https://upload.wikimedia.org/wikipedia/commons/f/f8/Andrea_Rodriguez.JPG' );
-
 class Imagery {
 
 	/**
