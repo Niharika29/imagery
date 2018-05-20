@@ -13,4 +13,4 @@ $jsonp_callback = isset( $_GET['callback'] ) ? $_GET['callback'] : null;
 $imagery = new Imagery( $apiKey );
 $data = json_encode( $imagery->main( $image ) );
 
-print $jsonp_callback ? '$jsonp_callback(' . $data . ')' : $data;
+print $jsonp_callback ? $jsonp_callback . '(' . $data . ')' : $data;
