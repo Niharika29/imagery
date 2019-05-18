@@ -7,7 +7,8 @@
 		"classmap": [
 			"Imagery.php",
 			"AnalyseImage.php",
-			"CategorySuggester.php"
+			"CategorySuggester.php",
+			"SuggestTags.php"
 		]
 	}
 }

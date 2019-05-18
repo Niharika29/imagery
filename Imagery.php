@@ -36,7 +36,6 @@ class Imagery {
 			$this->gcv->addFeatureLabelDetection( 5 );
 			$this->gcv->addFeatureTextDetection( 5 );
 			$this->gcv->setImageContext( [ 'webDetectionParams' => [ 'includeGeoResults' => true ] ] );
-
 			$response = $this->gcv->request();
 			$result = []; // Array that holds the result
 			$analyse = new AnalyseImage( $response, $image );
@@ -45,9 +44,12 @@ class Imagery {
 
 			// Process result to get array of valid categories among elements
 			if ( count( $features ) > 0 ) {
-				$categorySuggester = new CategorySuggester( $features );
-				$categories = $categorySuggester->getCategories();
-				$result['categories'] = $categories;
+				// Switching to use tags (Structured Data on Commons tags that come from Wikidata) instead of categories
+				// $categorySuggester = new CategorySuggester( $features );
+				// $categories = $categorySuggester->getCategories();
+				// $result['categories'] = $categories;
+				$tags = new SuggestTags( $features );
+				$result = $tags->getItems();
 			} else {
 				echo 'nolabels';
 			}
